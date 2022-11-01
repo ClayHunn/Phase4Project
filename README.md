@@ -14,8 +14,6 @@ So for this dataset we have the median prices of home sales in over 14,000 zipco
 
 
 
-
-
 # Data Analysis
 So after looking through the data, we decided to sort our zipcodes by SizeRank which is the only other descriptor included besides location and price.  After focusing in on the top 500 zipcodes, we decided to sort them by Growth Rate/ROI. We created this by dividing the most recent price by the farthest back price and subtracting by one.  This created a overall growth rate of every zipcode in our Top 500.  Once we had our Growth Rate, we pulled out the top 5 Metros by growth rate. These ended up being New York City, Los Angeles, Miami, Chicago, and Dallas/Fort Worth.  
 
@@ -27,6 +25,7 @@ So after looking through the data, we decided to sort our zipcodes by SizeRank w
 All of our models were first made stationary then from there we did a train/test split. Our training being April, 1996 to March, 2017 and testing being April, 2017 to April, 2018.  Some of the metrics we utilized include Dickey-Fuller Test for stationarity, ACF & PACF for  order of p d q, p-value, coefficents, skew, heteroskedasticity, and kurtosis for model tuning, and finally mean square error, root mean square error, and residuals for model evaluation.
 
 # New York City Model
+Here is our model's predictions, confidence interval, and actual values.
 ![Fig 2](images/newyork.png "New York")
 
 # Los Angeles Model
@@ -52,12 +51,24 @@ In the future we would like to add in the last 4 years of market prices as the p
 
 
 # More Information & Structure
-jupyter notebook 
+For any questions or comments please reach out to Clay Hunn or Sarah Jack
+hunnclay@gmail.com
+https://github.com/sarahadamsjack
 
-questions 
+
+
+The repositories structure is as follows
+1. Code -contains our code building up to the final notebook
+2. data -contains our zipped zillow housing data
+3. images - contains images used in Readme and Presentation
+4. Non-technical Presentation -Slides for stakeholder presentation
+5. Readme -Readme
+6. Final -In jupyter notebook
+7. Final -in pdf form
 
 
 
-# Repository Structure
+
+
 
 
