@@ -1,4 +1,4 @@
-*insert general picture*
+![New York](images/nycpic.jpg "Metros")
 
 # Predicting Housing Prices in the Top Growing Metros
 This repository was created to show proof of concept in using timeseries models to predict housing prices for a real estate investment firm.
@@ -19,15 +19,27 @@ So for this dataset we have the median prices of home sales in over 14,000 zipco
 # Data Analysis
 So after looking through the data, we decided to sort our zipcodes by SizeRank which is the only other descriptor included besides location and price.  After focusing in on the top 500 zipcodes, we decided to sort them by Growth Rate/ROI. We created this by dividing the most recent price by the farthest back price and subtracting by one.  This created a overall growth rate of every zipcode in our Top 500.  Once we had our Growth Rate, we pulled out the top 5 Metros by growth rate. These ended up being New York City, Los Angeles, Miami, Chicago, and Dallas/Fort Worth.  
 
-*insert picture of growth rate graph*
+![Fig 1](images/Growthrate.png "Growth Rate")
 
 
 
-# ARIMA Models
+# Models
 All of our models were first made stationary then from there we did a train/test split. Our training being April, 1996 to March, 2017 and testing being April, 2017 to April, 2018.  Some of the metrics we utilized include Dickey-Fuller Test for stationarity, ACF & PACF for  order of p d q, p-value, coefficents, skew, heteroskedasticity, and kurtosis for model tuning, and finally mean square error, root mean square error, and residuals for model evaluation.
 
+# New York City Model
+![Fig 2](images/newyork.png "New York")
 
-*pictures of our models*
+# Los Angeles Model
+![Fig 3](images/la.png "Loa Angeles")
+
+# Miami Model
+![Fig 4](images/mia.png "Miami")
+
+# Chicago Model
+![Fig 5](images/chi.png "LA")
+
+# Dallas-Fort Worth Model
+![Fig 6](images/dfwpng.png "DFW")
 
 # Conclusion
 In conclusion we can accurately capture the general trend of these metros, and can definitely recreate this for any other metros our client is interested in.  The knowledge of future price action can help influance high level descisions to help fuel real estate portfolio growth.  Using our models a real estate firm can keep on the cutting edge of technology and remain one step ahead of competitors.  It almost seems if you are in any kind of competitive market based on price movements and you are not using time series models, you will forever be a step behind.  
@@ -39,7 +51,7 @@ In the future we would like to add in the last 4 years of market prices as the p
 
 
 
-# More Information
+# More Information & Structure
 jupyter notebook 
 
 questions 
@@ -48,9 +60,4 @@ questions
 
 # Repository Structure
 
-├── README.md                        <- The top-level README for reviewers of this project
-├── final.ipynb                      <- Narrative documentation of analysis and modeling in Jupyter notebook
-├── presentation.pdf                 <- PDF version of project presentation
-├── data                             <- Both sourced externally and generated from code
-└── images                           <- Both sourced externally and generated from code
 
