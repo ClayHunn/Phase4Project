@@ -52,13 +52,15 @@ In the future we would like to add in the last 4 years of market prices as the p
 
 # More Information & Structure
 For any questions or comments please reach out to Clay Hunn or Sarah Jack
+
 hunnclay@gmail.com
+
 https://github.com/sarahadamsjack
 
 
 
 The repositories structure is as follows
-1. Code -contains our code building up to the final notebook
+1. code -contains our code building up to the final notebook
 2. data -contains our zipped zillow housing data
 3. images - contains images used in Readme and Presentation
 4. Non-technical Presentation -Slides for stakeholder presentation
